@@ -45,7 +45,7 @@ antigo start
 
 yarn typeorm migration:create
 
-babel configuracao pacotes
+babel configuracao pacotes 2
 -----------------------------------------
 yarn add @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-typescript babel-plugin-module-resolver -D
 
