@@ -30,9 +30,6 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
     });
 });
 
-const host = '0.0.0.0';
-const port = process.env.PORT ? Number(process.env.PORT) : 5000;
-
-app.listen(port, host, () => {
-    console.log('Server started.......');
+app.listen(process.env.PORT || 3333, () => {
+    console.log(' 🚀 Server started on port  3333!');
 });
