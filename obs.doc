@@ -50,7 +50,9 @@ babel configuracao pacotes 2
 yarn add @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-typescript babel-plugin-module-resolver -D
 
 web: npm install -g yarn &&  yarn install &&  yarn add @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-typescript babel-plugin-module-resolver babel-plugin-transform-typescript-metadata @babel/plugin-proposal-decorators -D  && yarn build && cd dist && node server.js
- 
+
+web: npm install -g yarn &&  yarn install &&  yarn add @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-typescript babel-plugin-module-resolver babel-plugin-transform-typescript-metadata @babel/plugin-proposal-decorators -D  && yarn build &&  npm i -S ms kerberos connect-modrewrite && npm update --save  && cd dist && node server.js
+ npm install -S ms kerberos
 
 web:  cd dist && node server.js
  
