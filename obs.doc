@@ -60,3 +60,10 @@ web: yarn install &&  yarn add @babel/cli @babel/core @babel/node @babel/preset-
  
 
 yarn add --dev babel-plugin-transform-typescript-metadata @babel/plugin-proposal-decorators
+
+
+
+-----------------------------------------
+
+    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
+    "start": "tsnd --respawn --transpile-only --ignore-watch node_modules src/server.ts",
