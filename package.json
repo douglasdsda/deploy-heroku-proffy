@@ -10,12 +10,6 @@
     "knex:rollback": "knex --knexfile knexfile.ts migrate:rollback"
   },
   "devDependencies": {
-    "@babel/cli": "^7.11.6",
-    "@babel/core": "^7.11.6",
-    "@babel/node": "^7.10.5",
-    "@babel/plugin-proposal-decorators": "^7.10.5",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/preset-typescript": "^7.10.4",
     "@types/bcryptjs": "^2.4.2",
     "@types/cors": "^2.8.7",
     "@types/express": "^4.17.7",
@@ -38,6 +32,12 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "date-fns": "^2.16.0",
