@@ -1,1 +1,1 @@
-web: npm i && npm run start
+web: npm i && npm i ts-node-dev && npm run start
