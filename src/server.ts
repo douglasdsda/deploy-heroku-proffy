@@ -31,9 +31,9 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
         message: 'Internal server error',
     });
 });
-const port = process.env.PORT ? Number(process.env.PORT) : 3333;
-const host = '0.0.0.0';
+// const port = process.env.PORT ? Number(process.env.PORT) : 3333;
+// const host = '0.0.0.0';
 
-app.listen(port, host, () => {
+app.listen(process.env.PORT || 3333, () => {
     console.log(' 🚀 Server started on port  3333!');
 });
