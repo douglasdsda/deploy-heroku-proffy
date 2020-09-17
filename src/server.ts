@@ -5,6 +5,7 @@ import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import 'express-async-errors';
 
+import uploadConfig from './config/upload';
 import AppError from './errors/AppErros';
 import routes from './routes';
 import './container';
@@ -12,7 +13,7 @@ import './container';
 const app = express();
 app.use(cors());
 app.use(express.json());
-
+app.use('/files', express.static(uploadConfig.uploadsFolder));
 app.use(routes);
 
 app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
@@ -31,8 +32,8 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
     });
 });
 
-const port = process.env.PORT || 3333;
-
-app.listen(Number(port), '0.0.0.0', () => {
-    console.log('Server started.......');
+const port = process.env.PORT ? Number(process.env.PORT) : 3333;
+const host = '0.0.0.0';
+app.listen(port, host, () => {
+    console.log(' 🚀 Server started on port  3333!');
 });
