@@ -1,1 +1,1 @@
-web: cd dist && node server.js
+web: npm i && npm run start
