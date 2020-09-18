@@ -25,7 +25,7 @@ yarn-error.log*
 src/.env
 .env
 
-dist/
+ 
 
 tmp/uploads/*
 !tmp/uploads/.gitkeep
